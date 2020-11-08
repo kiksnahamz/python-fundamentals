@@ -1,0 +1,44 @@
+establishing a list
+>>> players = [29, 58, 66, 71, 87]
+
+place number in brackets of list to retrieve the value at that position
+>>> players[2]
+66
+
+amend the value at a position
+>>> players[2] = 68
+and when we call the list we'll get
+>>> players
+[29, 58, 68, 71, 87]
+
+adds the values listed to the end of players, but this isn't actually modifying the original players list
+>>> players += [90, 91, 98]
+[29, 58, 68, 71, 87, 90, 91, 98]
+
+if the next value to be called in the sequence was players, then we would obtain the original list
+>>> players
+[29, 58, 68, 71, 87]
+
+calling the append function will alter the list by adding an extra item at the end
+>>> players.append(120)
+>>> players
+[29, 58, 68, 71, 87, 120]
+
+look up to, but not including the item with position 2 in the list
+>>> players[:2]
+[29, 58]
+
+amend the items up to, but not including the item with position 2 in the list 
+>>> players[:2] = [0, 0]
+>>> players
+[0, 0, 68, 71, 87, 120]
+
+same cells being amended as previous, but in this case they are being turned into blanks
+>>> players[:2] = []
+>>> players
+[68, 71, 87, 120]
+
+changing the list to an empty list, by resizing it to have no size
+>>> players[:] = []
+>>> players
+[]
