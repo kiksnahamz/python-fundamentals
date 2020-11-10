@@ -1,0 +1,15 @@
+'''This function is designed to take your weight and athlete status and print your according calorie allowance
+'''
+
+def allowed_calories(bodyweight,athlete):
+    if bodyweight > 100:
+        calories = bodyweight * 40
+    elif athlete is True :
+        calories = bodyweight * 35
+    else:
+        calories = bodyweight * 30
+    return calories
+
+kiesars_calories = allowed_calories(120, True)
+athlete_kiesar_calories = allowed_calories(90, True)
+print("Kiesar can consume up to ", athlete_kiesar_calories, " calories per day")
