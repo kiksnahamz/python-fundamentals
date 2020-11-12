@@ -1,0 +1,13 @@
+def cm_converter (name,feet, inches):
+    feet2cm = feet*30.48
+    in2cm = inches*2.54
+    print(name, "is ",  feet2cm + in2cm, "cm tall")
+
+
+kiesar_imperial = ["Kiesar", 6, 4]
+ahsan_imperial = ["Ahsan", 5, 11]
+hannah_imperial = ["Hannah", 5, 1.5]
+
+names = [kiesar_imperial, ahsan_imperial, hannah_imperial]
+for n in names:
+    cm_converter(*n)
