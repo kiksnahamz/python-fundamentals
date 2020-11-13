@@ -1,0 +1,20 @@
+n = 5
+#initialize factorial variable to 1
+factorial = 1
+
+#use integer function to find n
+#the for loop iterates through the range from 1, up to, but not including n+1
+
+'''so as we iterate through the loop factorial stores the factorials ascending
+first its 1*1
+then factorial holds a value of 1
+then it is multiplied by the next i in the range
+so 1*2, factorial holds the number 2 for the next iteration
+then on the next iteration it is multiplied by 3 and holds the value of 6
+it continues in this manner until the last multiplication where 5 is multiplied by 4!
+'''
+
+if int(n) >= 1:
+    for i in range (1,int(n)+1):
+        factorial = factorial * i
+print("Factorail of ",n , " is : ",factorial)
