@@ -1,0 +1,23 @@
+import random
+import urllib.request
+
+'''
+if unsure about modules use file>>settings>>project>>python interpreter
+use this section to download modules from web
+use + button to browse/search for any modules
+(alternatively use - sign to delete)
+once downloaded just call into file by using "import" as shown above^^
+'''
+
+#creating function downloadwebimage which takes a url and stores in a file
+def download_web_image(url):
+    #creating the number for the jpg and appending this number with the .jpg suffix
+    name = random.randrange(1,1000)
+    full_name = str(name) + ".jpg"
+
+    '''calling this function the urllib module which retrieves and stores the contents of a url. First argument taken
+    is the url we want to save and the second is the full name we use to save the argument
+    '''
+    urllib.request.urlretrieve(url, full_name)
+
+download_web_image("https://upload.wikimedia.org/wikipedia/commons/3/3a/Sia_plant.jpg")
